@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root
+{
+    --color-white:white;  
+    --color-black:black;  
+    --color-grey:#cecece;  
+    --color-primary:#7385F1;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+/** DASBOAD :sidbar**/
+
+.sidbar
+{
+    width: 260px;
+    height:100vh;
+    background-color: var( --color-white);
+    border-right: 1px solid var(--color-grey);
+    position: fixed;
+}
+
+.sibar__logo
+{
+ display: flex;  
+ height:70px; 
+ align-items:center;
+ justify-content:center;
+ border-bottom:1px solid #cecece;
+
+}
+
+.sibar__circle
+{
+ width:40px;
+ height: 40px;
+ border-radius:50px;
+ background-color:var(--color-primary); 
+ margin-right:8px; 
+}
+
+.sidbar h1
+{
+  color:var(--color-primary);     
+}
+
+.sidbar-menu ul li
+{
+    list-style:none;
+    padding:18px;
+}
+
+
+.sidbar-menu ul li:hover
+{
+    border-right: 4px solid var(--color-primary);
+    transition: all .3s;
+    background-color: aliceblue;
+}
+
+.sidbar-menu ul li a
+{
+   text-decoration: none;
+   color:var(--color-black);
+}
+
+.sidbar-menu ul li :hover a
+{
+    color:var(--color-primary);
+}
+
+/**MAIN-vcontent**/
+
+.main-content
+{
+    background-color:#F5F5FA;
+    height:100vh;
+    margin-left: 260px;
+}
+/** NAV**/
+.nav
+{
+  height: 70px; 
+  background-color:var(--color-white);
+  padding:0 15px;
+}
+
+.user
+{
+    height:50px;
+    width:50px;
+    border-radius:50%;
+    float: right;
+    background-color:var(--color-primary);
+    margin-top: 10px;
+}
+/** box-content **/
+
+.box-content
+{
+    padding:70px;
+}
+
+.first-row,.second-row
+{
+    display:flex;
+}
+
+.card-one,.card-two,.card-three,.card-four
+{
+  flex:1;
+  height: 180px;
+  border-radius:7px;
+  margin-right: 25px;
+  position: relative;
+}
+
+.card-one
+{
+  background:linear-gradient(90deg,#9862F9,#8AAAFE);
+}
+
+.card-two
+{
+    background:linear-gradient(90deg,#FEA9AA,#ff7b9e);  
+}
+
+.card-three
+{
+    background:linear-gradient(90deg,#FFC790,#FF9955);  
+}
+
+.card-four
+{
+    background:linear-gradient(90deg,#528cff,#4e89fe);  
+}
+
+.description
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align: center;
+    color: var(--color-white);
+
+}
+.description h3
+{
+  font-size:43px;
+}
+
+
+.second-row
+{
+    margin-top: 50px;
+    border-radius: 7px;
+}
+
+.card-chart
+{
+  flex: 1;
+  margin-right: 30px;
+  background-color: var(--color-white);
+  height:500px;
+  box-shadow: 0px 0px 30px -18px rgba(0,0,0,0.55);
+
+}
+
+.tree-row
+{
+    height:120px;
+    width: 100%;
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 30px -18px rgba(0,0,0,0.55);
+    margin-top: 50px;
+    border-radius:7px;
+    margin-right: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
